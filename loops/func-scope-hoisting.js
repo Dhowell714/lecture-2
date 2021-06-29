@@ -63,25 +63,25 @@ console.log(myDog("Mingus", "Mini Dachshund"))
 
 // Concise Body Function
 // Can only have one parameter if it's not enclosed by ( )
-let greeting = () => console.log("Hello bud.")
+//let greeting = () => console.log("Hello bud.")
 
-greeting()
+//greeting()
 
 // Block Body Arrow Function
 
-let sendEmail = (email, name) => {
-    return `Hello ${name}:
+//let sendEmail = (email, name) => {
+//    return `Hello ${name}:
     
-    We have been trying to reach you about your car's extended warranty.
+//    We have been trying to reach you about your car's extended warranty.
     
-    Is this email the correct email for you? ${email}
+//    Is this email the correct email for you? ${email}
     
-    Sincerely,
+//    Sincerely,
     
-    Annoying scammer.`
-}
+//   Annoying scammer.`
+//}
 
-console.log(sendEmail("SpecBoya@gmail.com", "Spec"))
+//console.log(sendEmail("SpecBoya@gmail.com", "Spec"))
 
 // Immediately Invoked Function Execution
 /*
@@ -117,33 +117,39 @@ let bill = (70)
 let salesTax = (0.7)
 let tipPercentage = 20 */
 
-function tipCalculator(bill, salesTax, tipPercentage) {
-    let taxAmt = bill * (salesTax/100)
-    let totalBill = bill + taxAmt
-    let totalTip = totalBill * (tipPercentage/100)
-    return totalTip
-}
+//function tipCalculator(bill, salesTax, tipPercentage) {
+//    let taxAmt = bill * (salesTax/100)
+//    let totalBill = bill + taxAmt
+//    let totalTip = totalBill * (tipPercentage/100)
+//    return totalTip
+//}
 
-console.log(tipCalculator(100, 7, 20))
+//console.log(tipCalculator(100, 7, 20))
 
 // Extra spicy challenge
 /*
     create a function of your own choice (Declaration or Expression) named capitalizeName which takes our parameter. It then capitalizes the first letter of the name and returns the full name to you.
 */
 
-function capitalizeName(name) {
-    let lowerName = name.toLowerCase()
-    let fletter = lowerName[0].toUpperCase() 
-    return fletter + lowerName.slice(1)
-}
-console.log(capitalizeName("DEVIN"))
+//function capitalizeName(name) {
+//    let lowerName = name.toLowerCase()
+//    let fletter = lowerName[0].toUpperCase() 
+//    return fletter + lowerName.slice(1)
+//}
+//console.log(capitalizeName("DEVIN"))
 
-console.log(upperName)
+//console.log(upperName)
 
 // Create a function which reverses a string using recursion
 
-function revStr(str) {
-    return (str === "") ? "" : revStr(str.substr(1)) + str.charAt(0);
+//function revStr(str) {
+//    return (str === "") ? "" : revStr(str.substr(1)) + str.charAt(0);
+//}
+
+//console.log(revStr("mingus"))
+
+let firstLast = (firstname, lastname) => {
+    return firstname, lastname
 }
 
-console.log(revStr("mingus"))
+console.log(firstLast("Devin", "Howell"))
